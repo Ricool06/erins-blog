@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: I'm Erin Crocker
-image: /img/home-jumbotron.jpg
+image: /img/waves.jpg
 heading: Creative musings from a freelance editor
 subheading: A freelance editor and writer
 mainpitch:

@@ -2,17 +2,18 @@
 
 // Config vars
 // Kaldi logo brand color: #FD461E
-$kaldi-red: #0F1C2F
-$kaldi-red-invert: #C8C8C4
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+$primary: #074449
+$primary-invert: #CCD8D9
+$secondary: #467A83
+$tersary: #6AA8B3
+$accent: #7299B5
 $body-color: #333
 $black: #2b2523
 
 .boxed-text
-  boxShadow: '#3D5571 0.5rem 0px 0px, #3D5571 -0.5rem 0px 0px'
-  backgroundColor: '#3D5571'
+  boxShadow: $secondary 0.5rem 0px 0px, $secondary -0.5rem 0px 0px
+  backgroundColor: $secondary
   color: 'white'
   lineHeight: '1'
   padding: '0.25em'
@@ -89,15 +90,15 @@ $black: #2b2523
   padding: 0 1rem
 footer.footer
   padding: 3rem 0rem 0rem
-  background-color: transparent
+  background-color: $tersary
 
 //Menu overrides
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
+$menu-item-active-color: $primary-invert
+$menu-item-active-background-color:	$primary-invert
+$menu-list-border-left: 1px solid $primary-invert
 $menu-label-color: $white-ter
 
 
@@ -121,7 +122,7 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #C8C8C4;
+  // background-color: #C8C8C4;
 .blog-list-item header
   display: flex;
   margin-bottom: 1em;

@@ -62,6 +62,14 @@ const Footer = class extends React.Component {
                         Admin
                       </a>
                     </li>
+                    <li>
+                      <a
+                        className="navbar-item"
+                        href="https://unsplash.com/@sencerbugrahan"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >Cover photo by @sencerbugrahan on Unsplash</a>
+                    </li>
                   </ul>
                 </section>
               </div>
