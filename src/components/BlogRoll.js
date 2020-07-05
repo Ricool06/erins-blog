@@ -13,13 +13,7 @@ class BlogRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
+              {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
                         imageInfo={{
@@ -29,6 +23,12 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
+              <article
+                className={`blog-list-item tile is-child box ${
+                  post.frontmatter.featuredpost ? 'is-featured' : ''
+                }`}
+              >
+                <header>
                   <p className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
@@ -88,7 +88,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 1024, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
