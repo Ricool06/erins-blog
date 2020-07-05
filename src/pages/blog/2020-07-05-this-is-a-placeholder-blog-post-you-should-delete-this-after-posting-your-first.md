@@ -5,7 +5,7 @@ title: This is a placeholder blog post, you should delete this after posting
 date: 2020-07-05T10:35:57.193Z
 description: Cool
 featuredpost: true
-featuredimage: /img/products-full-width.jpg
+featuredimage: /img/chemex.jpg
 tags:
   - and tags
 ---
